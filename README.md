@@ -1,2 +1,3 @@
 # Django
-my Django learn
+## owner Rick Chen 
+### daily of learn
