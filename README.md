@@ -1,3 +1,3 @@
-# Django
+# Django Learning
 ## owner Rick Chen 
-### daily of learn
+## daily of learn
