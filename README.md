@@ -1,6 +1,6 @@
 # Django Learning
 ## owner Rick Chen 
-## daily of learn
+## Learning Daily
 #### 20210701
 * [Day1 : 認識 Django](https://ithelp.ithome.com.tw/articles/10199515)
 * [Day2 : 安裝 Django 2.1](https://ithelp.ithome.com.tw/articles/10199575)
