@@ -34,3 +34,5 @@
 * [Day28 : Django auth - 登入/登出](https://ithelp.ithome.com.tw/articles/10206063)
 * [Day29 : Django 註冊](https://ithelp.ithome.com.tw/articles/10206355)
 * [Day30 : Django 第三方登入 - 以Github為例](https://ithelp.ithome.com.tw/articles/10206389)
+#### 20210704
+* [[Django教學9]6個步驟搞懂Django上傳圖片的功能](https://www.learncodewithmike.com/2020/04/django-image-upload.html)
