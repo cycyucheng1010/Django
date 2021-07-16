@@ -36,3 +36,6 @@
 * [Day30 : Django 第三方登入 - 以Github為例](https://ithelp.ithome.com.tw/articles/10206389)
 #### 20210704
 * [[Django教學9]6個步驟搞懂Django上傳圖片的功能](https://www.learncodewithmike.com/2020/04/django-image-upload.html)
+#### 20210714
+* [Django（六）模型（model）系統 -- 常用查詢語法及進階](https://www.itread01.com/content/1543740968.html)
+* [Django 视图](https://www.runoob.com/django/django-views.html)

@@ -6,21 +6,28 @@
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet"></link>
     
 
-    <title>medical_image_detect</title>
+    <title>Chest X-Ray Classification specifice to COVID-19</title>
 </head>
 
 <body>
 
     <section class="text-center">
         <div class="container">
-            <h1>
-                medical_image_detect</h1>
+            <h1 >
+                Chest X-Ray Classification specifice to COVID-19</h1>
             <div class="lead text-muted">
                 Use AI to confirm your health!.
             </div>
+            <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h1>Click to see DEMO samples</h1>
+            {% block demo %}
+            {% endblock %}
+            <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        <h1>OR , choose your Chest X-ray sample, then submit to upload for classification</h1>
             {% block upload %}
+            
             {% endblock  %}
-
+            
         </div>
     </section>
 
