@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<bodymobile>
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ensemble&emsp;----&emsp; Analysis&emsp;----&emsp; Report</h1>
+<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h2 style="color:blue;">Step 1 :Masking for ROI by Unet skill</h2>
+    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;Original Image &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Mask  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Masked Image </h3>
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+    <h3>Files:&emsp;{{ path0 }} &emsp;&emsp;&emsp; {{ path1 }} &emsp;&emsp;&emsp; {{ path2 }}</h3>
+<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2 style="color:blue;">Step 2 :Single CNN Prediction</h2>
+    <h3>Prediction of MobiNet &ensp;&ensp;&ensp;&ensp;: {{ pred_mobile }} &ensp; &ensp; {{ prob_mobile }}</h3>
+    <h3>Prediction of ResNet152V2 : {{ pred_res }}  &ensp; &ensp;{{ prob_res }}</h3>
+    <h3>Prediction of DenseNet201 : {{ pred_dense }} &ensp; &ensp; {{ prob_dense }}</h3>
+<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2 style="color:blue;">Step 3 :Guided Grad-CAM for CNN's attention visualization</h2>
+    <h3>&emsp;&emsp;&emsp;&emsp;Grad-CAM Heatmap&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back prop. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Guided Grad-CAM</h3>
+    <h3>MobilNet</h3>
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+    <h3>ResNet152V2</h3>
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+    <h3>DenseNet201</h3>
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2 style="color:blue;">Step 4 :Ensemble Prediction</h2>
+    <h3>Meta-Classifier of ensemble &emsp;&emsp;;&emsp;: {{ clf_name }}</h3>
+    <h3>Prediction of each Meta-Classifier : {{ ensemble_results }}</h3>
+
+</bodymobile>
+</html>

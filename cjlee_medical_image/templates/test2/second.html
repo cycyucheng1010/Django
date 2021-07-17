@@ -3,11 +3,12 @@
 
 {% block demo %}
 {% load static %}
-<input class="btn btn-primary" type="submit" value="提交 DEMO for below samples"  onclick="location.href='/'"></button> <br><br>
+<input class="btn btn-primary" type="submit" value="提交 DEMO for below samples"  onclick="location.href='/uploadfile/pred_demo'"></button> <br><br>
 <img src="{% static 'image/COVID119.jpg' %}" alt="COVID119.jpg" width="200" height="200" >
 <img src="{% static 'image/Pneumonia.jpg' %}" alt="Pneumonia.jpg" width="200" height="200" >
 <img src="{% static 'image/Normal.jpg' %}" alt="Normal.jpg" width="200" height="200" >
 <img src="{% static 'image/dog_2.jpg' %}" alt="dog_2.jpg"width="200" height="200" > 
+<h3>&emsp;COVID-19&emsp;&emsp;&emsp; Pneumonia&emsp;&emsp;&emsp;Normal &emsp;&emsp;&emsp;Out-of-Design</h3>
 {% endblock %}
 
 
@@ -19,7 +20,7 @@
         <div class="form-group col-md-4">
         </div>
         <div class="form-group col-md-4">
-            <input class="btn btn-primary" type="submit" value="提交 Submit" onclick="location.href='/'" />
+            <input class="btn btn-primary" type="submit" value="提交 Submit" onclick="location.href='/uploadfile/unet_pred'" />
         </div>
         <div class="form-group col-md-4">
         </div>
