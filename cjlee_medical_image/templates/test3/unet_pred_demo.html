@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<h1>&emsp;&emsp;&emsp;Ensemble ----  Analysis ----  Demo 1</h1>
+
+<html>
+
+<bodymobile>
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ensemble&emsp;----&emsp; Analysis&emsp;----&emsp; Demo 1</h1>
 <h3>COVID-19----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-<h2 style="color:blue;">Step 1 :Masking for ROI by Unet skill</h2>
-<h3>&emsp;&emsp;&emsp;&emsp;&emsp;Original Image &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Mask  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Masked Image </h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-<h3>Files:&emsp;{{ path1_0 }} &emsp;&emsp;&emsp; {{ path1_1 }} &emsp;&emsp;&emsp; {{ path1_2 }}</h3>
+    <h2 style="color:blue;">Step 1 :Masking for ROI by Unet skill</h2>
+{%load static %}
+    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;Original Image &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Mask  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Masked Image </h3>
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_0 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_1 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_2 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+    <h3>Files:&emsp;{{ path1_0 }} &emsp;&emsp;&emsp; {{ path1_1 }} &emsp;&emsp;&emsp; {{ path1_2 }}</h3>
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 2 :Single CNN Prediction</h2>
     <h3>Prediction of MobiNet &ensp;&ensp;&ensp;&ensp;: {{ pred_mobile }} &ensp; &ensp; {{ prob_mobile }}</h3>
@@ -16,17 +21,17 @@
 <h2 style="color:blue;">Step 3 :Guided Grad-CAM for CNN's attention visualization</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;Grad-CAM Heatmap&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back prop. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Guided Grad-CAM</h3>
     <h3>MobilNet</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_3 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_4 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_5 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>ResNet152V2</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_6 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_7 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_8 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>DenseNet201</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_9 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_10 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path1_11 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 4 :Ensemble Prediction</h2>
     <h3>Meta-Classifier of ensemble &emsp;&emsp;;&emsp;: {{ clf_name }}</h3>
@@ -36,9 +41,9 @@
 <h3>Pneumonia----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
     <h2 style="color:blue;">Step 1 :Masking for ROI by Unet skill</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;&emsp;Original Image &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Mask  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Masked Image </h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_0 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_1 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_2 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>Files:&emsp;{{ path2_0 }} &emsp;&emsp;&emsp; {{ path2_1 }} &emsp;&emsp;&emsp; {{ path2_2 }}</h3>
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 2 :Single CNN Prediction</h2>
@@ -49,17 +54,17 @@
 <h2 style="color:blue;">Step 3 :Guided Grad-CAM for CNN's attention visualization</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;Grad-CAM Heatmap&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back prop. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Guided Grad-CAM</h3>
     <h3>MobilNet</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_3 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_4 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_5 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>ResNet152V2</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_6 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_7 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_8 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>DenseNet201</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_9 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_10 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path2_11 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
 
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 4 :Ensemble Prediction</h2>
@@ -70,9 +75,9 @@
 <h3>Normal---------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
     <h2 style="color:blue;">Step 1 :Masking for ROI by Unet skill</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;&emsp;Original Image &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Mask  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Masked Image </h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_0 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_1 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_2 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>Files:&emsp;{{ path3_0 }} &emsp;&emsp;&emsp; {{ path3_1 }} &emsp;&emsp;&emsp; {{ path3_2 }}</h3>
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 2 :Single CNN Prediction</h2>
@@ -83,17 +88,17 @@
 <h2 style="color:blue;">Step 3 :Guided Grad-CAM for CNN's attention visualization</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;Grad-CAM Heatmap&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back prop. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Guided Grad-CAM</h3>
     <h3>MobilNet</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_3 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_4 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_5 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>ResNet152V2</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_6 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_7 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_8 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>DenseNet201</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_9 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_10 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path3_11 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
 
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 4 :Ensemble Prediction</h2>
@@ -104,9 +109,9 @@
 <h3>Out of Design--------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
     <h2 style="color:blue;">Step 1 :Masking for ROI by Unet skill</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;&emsp;Original Image &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Mask  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Masked Image </h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_0 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_1 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_2 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>Files:&emsp;{{ path4_0 }} &emsp;&emsp;&emsp; {{ path4_1 }} &emsp;&emsp;&emsp; {{ path4_2}}</h3>
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 2 :Single CNN Prediction</h2>
@@ -117,18 +122,17 @@
 <h2 style="color:blue;">Step 3 :Guided Grad-CAM for CNN's attention visualization</h2>
     <h3>&emsp;&emsp;&emsp;&emsp;Grad-CAM Heatmap&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back prop. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Guided Grad-CAM</h3>
     <h3>MobilNet</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_3 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_4 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_5 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>ResNet152V2</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_6 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_7 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_8 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
     <h3>DenseNet201</h3>
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-&emsp;&emsp;&emsp;&ensp;<img src="" align="middle" width="200" height="200"/>&emsp;&emsp;
-
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_9 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_10 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
+&emsp;&emsp;&emsp;&ensp;<img src="../static/{{ path4_11 }}" align="middle" width="200" height="200"/>&emsp;&emsp;
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2 style="color:blue;">Step 4 :Ensemble Prediction</h2>
     <h3>Meta-Classifier of ensemble &emsp;&emsp;;&emsp;: {{ clf_name }}</h3>

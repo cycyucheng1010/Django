@@ -17,6 +17,7 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('',views.index,name='index'),
+    
     path('pred_demo',views.pred_demo,name='pred_demo'),
     path('unet_pred',views.unet_pred,name='unet_pred'),
 ]

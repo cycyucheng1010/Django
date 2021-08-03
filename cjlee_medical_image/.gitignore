@@ -1,0 +1,13 @@
+media/
+static/image/
+static/image_demo
+static/image_org
+uploadfile/chestKNN_04July2021
+uploadfile/chestLR_04July2021
+uploadfile/chestMLP_04July2021
+uploadfile/chestRF_04July2021
+uploadfile/chestSVM_04July2021
+uploadfile/DenseNet201_newimg_2dense_best.h5
+uploadfile/mobilenet_newimg_pretrain_2dense_best.h5
+uploadfile/ResNet152V2_newimg_2dense_best.h5
+uploadfile/unet3plus_tri_210521_2ndaddition.h5

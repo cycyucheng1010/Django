@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <meta charset=utf-8 />
+
+    <script src="../../static/upload.js"></script>
+
+    <style>
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chest X-Ray Classification specifice to COVID-19</h1>
+<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h1 style="color:blue;">Click to see DEMO samples</h1><br>
+    <form action="/uploadfile/pred_demo" method="GET" enctype="multipart/form-data">
+        <button type="submit">提交 DEMO for below samples</button>&emsp;&emsp;&ensp;&ensp;
+        <br><br>
+        <h3>&emsp;&emsp;&emsp;COVID-19&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Pneumonia&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;Normal &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Out-of-Design</h3>
+        <img src="../../static/image_demo/COVID119.jpg" align="middle" width="200" height="200"/>&emsp;
+        <img src="../../static/image_demo/Pneumonia.jpg" align="middle" width="200" height="200"/>&emsp;
+        <img src="../../static/image_demo/Normal.jpg" align="middle" width="200" height="200"/>&emsp;
+        <img src="../../static/image_demo/dog_2.jpg" align="middle" width="200" height="200"/>&emsp;
+    </form>
+<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h1 style="color:blue;">OR , choose your Chest X-ray sample, then submit to upload for classification</h1><br>
+    <form action="/uploadfile/unet_pred" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type='file' name='file' onchange="readURL(this);" />
+        <img id="blah" src="#" alt="Image not selected" align="middle" width="100" height="100"/>
+        <button type="submit">提交 Submit</button>
+    </form>
+<br><br><br>
+
+
+</body>
+
+</html>
